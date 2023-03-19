@@ -6,7 +6,7 @@ class figure ():
         self.perimeter = 0
 
     def AreaCompare (self, other):
-        #if issubclass(type(other), self.__class__): # Невозможно сравить подклассы?
+        #if issubclass(type(other), self.__class__): # Невозможно сравнить подклассы?
             if (self.area > other.area): return print('Первая фигура больше второй по площади')
             elif (self.area < other.area): return print('Первая фигура меньше второй по площади')
             elif (self.area == other.area): return print('Первая фигура равна второй по площади')
@@ -23,7 +23,7 @@ class figure ():
         return print(f'Площадь фигуры: {self.area}')
 
     def Perimetr(self):
-        return print(f'Периметр фигуры: {self.perimetr}')
+        return print(f'Периметр фигуры: {self.perimeter}')
 
 class square(figure):
     def __init__(self, x) -> None:
