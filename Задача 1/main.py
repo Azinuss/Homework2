@@ -1,11 +1,12 @@
 
-def polindrome(str):
+def polindrome(str) -> bool:
     for i in range(len(str)):
-        if (str[i] != str[-i-1]):
-            print('Эта строка  не полином')      
-            return
-    print('Эта строка полином')        
-    return
+        if str[i] != str[-i-1]:
+            return False     
+    return True
 
 mass = 'дед'
-polindrome(mass)
+if polindrome(mass):
+    print('Строка является палиндромом')
+else:
+    print('Строка не является палиндромом')
