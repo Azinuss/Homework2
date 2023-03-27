@@ -1,4 +1,4 @@
-def fun(fn, mass):
+def fun(fn, mass) -> list:
     return list(filter(fn,mass))
 
 mass = ['Пробелы тут есть', 'А тут первая', 'мало', 'арбуз']
